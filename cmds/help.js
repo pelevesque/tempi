@@ -3,6 +3,7 @@ const menus = {
     tempi [command] <options>
 
     scale .............. show the scale for a given tempo
+    terms .............. show common tempo terms
     version ............ show package version
     help ............... show help menu for a command`,
 

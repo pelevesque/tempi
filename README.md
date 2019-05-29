@@ -2,8 +2,6 @@
 
 A cli tool for working with musical tempi.
 
-Currently only a method for generating tempo scales is implemented, but others will follow.
-
 ## Node Repository
 
 https://www.npmjs.com/package/tempi

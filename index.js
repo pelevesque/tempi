@@ -20,6 +20,10 @@ module.exports = () => {
     cmd = 'scale'
   }
 
+  if (args.terms) {
+    cmd = 'terms'
+  }
+
   switch (cmd) {
     case 'version':
       require('./cmds/version')(args)
@@ -31,6 +35,10 @@ module.exports = () => {
 
     case 'scale':
       require('./cmds/scale')(args)
+      break
+
+    case 'terms':
+      require('./cmds/terms')(args)
       break
 
     default:
