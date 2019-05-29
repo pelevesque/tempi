@@ -19,6 +19,18 @@ Vivacissimo                very fast and lively
 Allegrissimo               very fast
 Presto            168–200  very fast
 Prestissimo       >200     extremely fast
+
+Additional Terms:
+
+A piacere                            the performer may use his own discretion with
+                                     regard to tempo and rhythm; literally "at pleasure"
+L'istesso tempo or Lo stesso tempo   at the same speed
+Tempo comodo                         at a comfortable (normal) speed
+Tempo di...                          the speed of a ...
+                                     - Tempo di valse (speed of a waltz)
+                                     - Tempo di marcia (speed of a march)
+Tempo giusto                         at a consistent speed, at the 'right' speed, in strict tempo
+Tempo semplice                       simple, regular speed, plainly
 `
   console.log(terms)
 }
