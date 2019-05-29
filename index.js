@@ -8,14 +8,6 @@ module.exports = () => {
 
   let cmd = args._[0] || 'help'
 
-  if (args.version || args.v) {
-    cmd = 'version'
-  }
-
-  if (args.help || args.h) {
-    cmd = 'help'
-  }
-
   if (args.scale) {
     cmd = 'scale'
   }
@@ -24,21 +16,29 @@ module.exports = () => {
     cmd = 'terms'
   }
 
+  if (args.version || args.v) {
+    cmd = 'version'
+  }
+
+  if (args.help || args.h) {
+    cmd = 'help'
+  }
+
   switch (cmd) {
-    case 'version':
-      require('./cmds/version')(args)
-      break
-
-    case 'help':
-      require('./cmds/help')(args)
-      break
-
     case 'scale':
       require('./cmds/scale')(args)
       break
 
     case 'terms':
       require('./cmds/terms')(args)
+      break
+
+    case 'version':
+      require('./cmds/version')(args)
+      break
+
+    case 'help':
+      require('./cmds/help')(args)
       break
 
     default:
