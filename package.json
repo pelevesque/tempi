@@ -1,6 +1,6 @@
 {
   "name": "tempi",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A cli tool for working with musical tempi.",
   "main": "index.js",
   "bin": "bin/tempi",
