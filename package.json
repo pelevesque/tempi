@@ -1,0 +1,28 @@
+{
+  "name": "tempi",
+  "version": "0.0.1",
+  "description": "A cli tool for working with musical tempi.",
+  "main": "index.js",
+  "bin": "bin/tempi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pelevesque/tempi.git"
+  },
+  "keywords": [
+    "music",
+    "tempo",
+    "tempi",
+    "metronome",
+    "scale"
+  ],
+  "author": "Pierre-Emmanuel Lévesque <pierre.e.levesque@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pelevesque/tempi/issues"
+  },
+  "homepage": "https://github.com/pelevesque/tempi#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "minimist": "^1.2.0"
+  }
+}
