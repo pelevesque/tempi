@@ -1,3 +1,5 @@
+'use strict'
+
 const chalk  = require('chalk')
 
 function _makeScale(wholeNote) {
@@ -57,7 +59,7 @@ function _formatScale(scale, trimDecimals = true, pad = true, colorize = true) {
 function _renderScale(wholeNotesPerMinute, trimDecimals = true, pad = true, colorize = true) {
   let scale = _makeScale(wholeNotesPerMinute)
   _formatScale(scale, trimDecimals, pad, colorize)
-  console.log(scale.join(' '))
+  console.log('    ' + scale.join(' '))
 }
 
 module.exports = (args) => {
@@ -74,13 +76,15 @@ module.exports = (args) => {
   let arg2 = args['_'][2]
 
   if (infos) {
-    console.log(chalk.rgb(255, 255, 255).underline('|||||') + ' = 2:1')
-    console.log(chalk.rgb(255, 230, 178)('|||||') + ' = 6:5')
-    console.log(chalk.rgb(255, 205, 102)('|||||') + ' = 5:4')
-    console.log(chalk.rgb(255, 180,  25)('|||||') + ' = 4:3')
-    console.log(chalk.rgb(255, 155,  0)('|||||') + ' = 3:2')
+    console.log('')
+    console.log('    ' + chalk.rgb(255, 255, 255).underline('|||||') + ' = 2:1')
+    console.log('    ' + chalk.rgb(255, 230, 178)('|||||') + ' = 6:5')
+    console.log('    ' + chalk.rgb(255, 205, 102)('|||||') + ' = 5:4')
+    console.log('    ' + chalk.rgb(255, 180,  25)('|||||') + ' = 4:3')
+    console.log('    ' + chalk.rgb(255, 155,  0)('|||||') + ' = 3:2')
   }
 
+  console.log('')
   if (typeof arg1 === 'number') {
     if (typeof arg2 !== 'number') arg2 = arg1
     for (let i = arg1; i <= arg2; i++) {
@@ -92,4 +96,5 @@ module.exports = (args) => {
       _renderScale(i)
     }
   }
+  console.log('')
 }

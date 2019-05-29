@@ -1,3 +1,5 @@
+'use strict'
+
 const menus = {
   main: `
     tempi [command] <options>
@@ -5,7 +7,8 @@ const menus = {
     scale .............. show the scale for a given tempo
     terms .............. show common tempo terms
     version ............ show package version
-    help ............... show help menu for a command`,
+    help ............... show help menu for a command
+    `,
 
   scale: `
     Shows a tempo scale based on a given BPM (beats per minute)
